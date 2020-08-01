@@ -8,4 +8,6 @@ class nhom extends Model
 {
     public $timestamps = false;
     protected $guarded = [];
+
+    public $table = 'nhom';
 }
