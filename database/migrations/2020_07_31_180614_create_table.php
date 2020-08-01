@@ -13,7 +13,7 @@ class CreateTable extends Migration
      */
     public function up()
     {
-        Schema::create('nhom', function (Blueprint $table) {
+        Schema::create('nhoms', function (Blueprint $table) {
             $table->integer('id')->autoIncrement();
             $table->string('group');
             $table->integer('point')->default('0');
