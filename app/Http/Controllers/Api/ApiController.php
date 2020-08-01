@@ -11,7 +11,10 @@ use App\Http\Controllers\Controller;
 class ApiController extends Controller
 {
     function groups(){
-        dd(23);
+        $group = nhom::all();
+        return response()->json([
+            'groups' => nhomRS::collection($group)
+        ], 200);
     }
 
     function add(){
